@@ -30,14 +30,14 @@ resolvers ++= Seq(
     "spray repo"          at "http://repo.spray.io"
 )
 
-val scalazV = "7.0.6"
+val scalazV = "7.1.0"
 val sprayV = "1.3.1"
 val akkaV = "2.3.6"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka"   %%  "akka-actor"                    % akkaV,
   "com.typesafe.akka"   %%  "akka-persistence-experimental" % akkaV,
-  "org.iq80.leveldb"            % "leveldb"          % "0.7",
+  //"org.iq80.leveldb"            % "leveldb"          % "0.7",
   "org.fusesource.leveldbjni"   % "leveldbjni-all"   % "1.8",
   "org.scalaz"          %%  "scalaz-core"                   % scalazV,
   "com.nicta"			%%	"rng"							% "1.3.0",
